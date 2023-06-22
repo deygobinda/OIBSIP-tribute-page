@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@400;700&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+   
+}
+
+
+ body{
+    background: #f3e9d8;
+ }
+
+.container{
+    margin: 0 10%;
+}
+.flex{
+    display: flex;
+    
+}
+.hero-section{
+    gap: 10px;
+}
+
+
+.picture{
+    width: 70%;
+}
+.picture img{
+    width: 100%;
+}
+
+.about-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+ h1,h2{
+    font-weight: 500;
+}
+.time-line{
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+li{
+    list-style: none;
+}
+li span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+li p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.time-line li:before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: rgb(204, 171, 114);
+    position: absolute;
+    top: 38%;
+    left: -11px;
+}
+
+.time-line li {
+    list-style-type: none;
+    padding: 30px 50px;
+    border-left: 3px solid rgb(0, 0, 0);
+    position: relative;
+    font-size: 18px;
+    color: #0a100d;
+}
+
+
+.time-line ul{
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.with-students{
+    margin-top: 20px;
+    border: 15px  rgb(204, 171, 114) solid;
+}
+
+
+
+.with-students img {
+    width:100%;
+}
+
+.info{
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color:rgb(214, 196, 164) ;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:769px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .picture{
+        width: 100%;
+    }
+    .about-section{
+        gap: 15px;
+    }
+    li span{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:426px){
+    .hero-section{
+        flex-direction: column;
+    }
+    .picture{
+        width: 100%;
+    }
+    .about-section{
+        gap: 10px;
+    }
+}
